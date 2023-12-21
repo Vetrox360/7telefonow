@@ -1,0 +1,401 @@
+<!DOCTYPE html><html lang="pl"> 
+<head>
+  <link rel = "shortcut icon" href="assets/logo.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7 Najlepszych smartfonów</title>
+  <style>
+    table {
+border-collapse: collapse;
+font-family: Arial, sans-serif;
+}
+ol {
+  list-style-type: decimal;
+}
+
+ol li::before {
+  content: counter(list) ". ";
+  color: rgb(146, 108, 82);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+ol li {
+  counter-increment: list;
+  color: rgb(255, 255, 255);
+}
+
+form{
+  padding: 20px;
+}
+
+td, th {
+border: 1px solid black;
+padding: 10px;
+text-align: center;
+}
+  .form {
+display: flex;
+flex-direction: column;
+align-items: center;
+font-family: Arial, sans-serif;
+}
+
+.form label {
+font-weight: bold;
+margin: 10px;
+}
+
+.form input[type="text"], .form input[type="email"] {
+width: 200px;
+padding: 5px;
+border: 1px solid black;
+}
+.form input[type="radio"], .form input[type="checkbox"] {
+margin: 5px;
+}
+
+.form select {
+width: 100px;
+padding: 5px;
+border: 1px solid black;
+}
+
+.form input[type="submit"], .form input[type="reset"] {
+width: 100px;
+padding: 10px;
+background-color: #333;
+color: white;
+border: none;
+cursor: pointer;
+}
+
+.form input[type="submit"]:hover, .form input[type="reset"]:hover {
+background-color: #ddd;
+color: black;
+}
+body {
+background-color: rgb(255, 242, 225);
+}
+
+
+.navbar {
+display: flex;
+align-items: center;
+background-color: #664228;
+color: white;
+font-family: Arial, sans-serif;
+}
+
+.navbar a {
+color: #dfb393;
+text-decoration: none;
+padding: 10px;
+}
+
+.navbar a:hover {
+  background-color: #000000;
+color: rgb(179, 143, 130);
+border-radius: 20px;
+}
+
+.title {
+text-align: center;
+font-size: 36px;
+font-weight: bold;
+margin: 20px;
+color: #BA9976;
+}
+.content {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.block {
+width: 33%;
+border: 1px solid black;
+box-shadow: 5px 5px 5px grey;
+color: #BA9976;
+background-color: #664228; 
+height: 2000px;
+}
+
+.block h2 {
+text-align: center;
+font-size: 24px;
+font-weight: normal;
+margin: 10px;
+}
+
+.block p {
+text-align: justify;
+font-size: 16px;
+margin: 30px;
+}
+
+.block img {
+display: block;
+width: 250px;
+height: 250px;
+margin: auto;
+}
+
+.footer {
+text-align: center;
+font-size: 14px;
+color: white;
+background-color: #333;
+padding: 10px;
+}
+
+
+img {
+  border-radius: 5px;
+}
+div {
+  border-radius: 20px;
+}
+.container {
+display: flex;
+flex-wrap: wrap;
+}
+.box {
+padding: 20px;
+color: white;
+}
+.red {
+background-color: red;
+width: 30%;
+}
+.red2 {
+background-color: rgb(255, 0, 0);
+width: 30%;
+}
+.white {
+background-color: white;
+width: 40%;
+}
+.image {
+width: 100%;
+height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+.navbar {
+flex-direction: column;
+}
+
+.title {
+font-size: 24px;
+}
+
+.block {
+width: 100%;
+height: 550px;
+}
+
+.block h2 {
+font-size: 18px;
+}
+
+.block p {
+font-size: 14px;
+}
+
+.block img {
+width: 200px;
+height: 200px;
+}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+  .title {
+  font-size: 24px;
+}
+
+.block {
+  width: 100%;
+  height: 550px;
+}
+
+.block h2 {
+  font-size: 18px;
+}
+
+.block p {
+  font-size: 14px;
+}
+
+.block img {
+  width: 200px;
+  height: 200px;
+}
+}
+@media only screen and (min-width: 1200px) {
+}
+@keyframes move-and-color {
+  0% { transform: translate(0, 0); background-color: rgb(0, 0, 0); }
+  25% { transform: translate(0, 100px); background-color: rgb(192, 138, 114); }
+  50% { transform: translate(200px, 100px); background-color: rgb(255, 255, 255); }
+  75% { transform: translate(200px, 0); background-color: rgb(192, 138, 114);  }
+  100% { transform: translate(0, 0); background-color: rgb(0, 0, 0); }
+}
+#block2 {
+  animation: move-and-color 4s infinite;
+  animation-iteration-count: infinite;
+  width: 100px;
+  height: 100px;
+  background-image: url("assets/logo1.png");
+  border-radius: 15px;
+}
+
+ 
+
+</style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="index.html">Strona główna</a>
+    <a href="iphone.html">iPhone</a>
+    <a href="samsung.html">Samsung</a>
+    <a href="google.html">Google</a>
+    <a href="oppo.html">Oppo</a>
+    <a href="xiaomi.html">Xiaomi</a>
+    <a href="oneplus.html">OnePlus</a>
+    <a href="huawei.html">Huawei</a>
+  </div>
+
+  <div class="title">
+    <h1>7 najlepszych smartfonów</h1>
+  </div>
+  <div class="content">
+    <div class="block">
+      <h2>Najlepsze Smartfony</h2>
+      <table>
+        <tr>
+          <td>Firma</td>
+          <td>Model</td>
+        </tr>
+        <tr>
+          <td>Apple</td>
+          <td>iPhone 15 Pro Max</td>
+        </tr>
+        <tr>
+          <td>Samsung</td>
+          <td>Galaxy S23 Ultra</td>
+        </tr>
+        <tr>
+          <td>Google</td>
+          <td>Pixel 8 Pro</td>
+        </tr>
+        <tr>
+          <td>Huawei</td>
+          <td>P60 Pro</td>
+        </tr>
+        <tr>
+          <td>Oppo</td>
+          <td>Find X6 Pro</td>
+        </tr>
+        <tr>
+          <td>OnePlus</td>
+          <td>Open</td>
+        </tr>
+        <tr>
+          <td>Xiaomi</td>
+          <td>Mi 14 Pro</td>
+        </tr>
+      </table>
+      <h2>Animacja CSS</h2>
+      <div id="block2"></div>
+      
+     </div>
+
+    <div class="block">
+      <h2>Ankieta</h2>
+      <form action="process.php" method="POST" name="ankieta">
+        <label for="email">Podaj swój adres email:</label>
+        <br>
+        <input type="email" id="email" name="email" required>
+  <br>  <br>
+
+        <label>Podaj swoją płeć:</label>
+        <br>
+        <input type="radio" id="male" name="gender" value="Mężczyzna">
+        <label for="male">Mężczyzna</label>
+        <input type="radio" id="female" name="gender" value="Kobieta">
+        <label for="female">Kobieta</label>
+        <input type="radio" id="other" name="gender" value="Inna">
+        <label for="other">Inna</label>
+        <br>  <br>
+        <label>Jakiej firmy posiadasz aktualnie telefon?</label>
+        <br>
+        <input type="checkbox" id="apple" name="phone[]" value="Apple">
+        <label for="apple">Apple</label>
+        <input type="checkbox" id="samsung" name="phone[]" value="Samsung">
+        <label for="samsung">Samsung</label>
+        <input type="checkbox" id="google" name="phone[]" value="Google">
+        <label for="google">Google</label>
+        <input type="checkbox" id="huawei" name="phone[]" value="Huawei">
+        <label for="huawei">Huawei</label>
+        <input type="checkbox" id="xiaomi" name="phone[]" value="Xiaomi">
+        <label for="xiaomi">Xiaomi</label>
+        <input type="checkbox" id="oppo" name="phone[]" value="Oppo">
+        <label for="oppo">Oppo</label>
+        <input type="checkbox" id="oneplus" name="phone[]" value="OnePlus">
+        <label for="oneplus">OnePlus</label>
+
+        <br>  <br>
+        <input type="submit" value="Wyślij">
+        <input type="reset" value="Wyczyść">
+      </form>
+      <h2>Ranking najlepszych smartfonów</h2>
+      <ol>
+  <li>Samsung Galaxy S23 Ultra</li>
+  <li>Apple iPhone 15 Pro Max</li>
+  <li>OnePlus Open</li>
+  <li>Xiaomi Mi 14 Pro</li>
+  <li>Google Pixel 8 Pro</li>
+  <li>Huawei P60 Pro</li>
+  <li>Oppo Find X6 Pro</li>
+</ol>
+     </div>
+    
+
+    <div class="block">
+      <h2 id="gal">Galeria zdjęć</h2>
+      <div class="gallery">
+          <a data-gallery href="assets/samsung1.png">
+              <img src="assets/samsung.png" alt="apple">
+          </a>
+          <a data-gallery href="assets/iphone1.png">
+              <img src="assets/iphone.png" alt="samsung">
+          </a>
+          <a data-gallery href="assets/google1.png">
+              <img src="assets/google.png" alt="google">
+          </a>
+          <a data-gallery href="assets/xiaomi1.png">
+              <img src="assets/xiaomi.png" alt="xiaomi">
+          </a>
+          <a data-gallery href="assets/oneplus1.png">
+            <img src="assets/oneplus.png" alt="xiaomi">
+        </a>
+        <a data-gallery href="assets/oppo1.png">
+          <img src="assets/oppo.png" alt="xiaomi">
+      </a>
+      <a data-gallery href="assets/huawei1.png">
+        <img src="assets/huawei.png" alt="xiaomi">
+    </a>
+      </div>
+      <script src="index.js" async></script>
+    </div>
+  </div>
+<footer>
+  <p>Kacper Rokita 2TB</p>
+</footer>
+
+
+
+</body>
+</html>
